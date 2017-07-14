@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS `product_master` (
+  `product_id` int(10) NOT NULL,
+  `product_desc` varchar(30) NOT NULL,
+  `subproduct_id` int(10) NOT NULL,
+  `subproduct_desc` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product_master`
+--
+
+INSERT INTO `product_master` (`product_id`, `product_desc`, `subproduct_id`, `subproduct_desc`) VALUES
+(1, 'fruits', 1, 'lemon'),
+(1, 'fruits', 2, 'mosambi'),
+(2, 'cereals', 1, 'rice'),
+(2, 'cereals', 1, 'corn'),
+(2, 'cereals', 1, 'rice'),
+(2, 'cereals', 1, 'corn'),
+(3, 'pulses', 1, 'red gram'),
+(3, 'pulses', 2, 'green gram'),
+(4, 'real estate', 1, 'agriculture'),
+(4, 'real estate', 2, 'apartments'),
+(5, 'solar products', 1, 'commercial'),
+(5, 'solar products', 2, 'residential'),
+(6, 'legal services', 1, 'civil');

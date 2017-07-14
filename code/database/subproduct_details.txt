@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS `subproduct_details` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `seller_id` int(10) NOT NULL,
+  `product_desc` varchar(20) NOT NULL,
+  `subproduct_desc` varchar(20) NOT NULL,
+  `quantity` int(10) NOT NULL,
+  `price` decimal(30,0) NOT NULL,
+  `units` varchar(10) NOT NULL,
+  `description` varchar(100) NOT NULL,
+  `available_from` date NOT NULL,
+  `available_to` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
